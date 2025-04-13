@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+*{
+    margin: 0;
+    align-items: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+  position: relative;
+}
+
+.container_head{
+  background-color: #3C3C3C;
+  border-radius: 10px;
+  max-width: 60%;
+  margin-bottom: 10px;
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.container_head.vermelho {
+  background-color: #C73131;
+}
+
+.container_close button{
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 94%;
+  top: 12.5%;
+  cursor: pointer;
+}
+
+.container_close img{
+  position: relative;
+  left: -3px;
+  top: 1px;
+  transition: 0.5s;
+}
+
+#closeBtn.rotated{ 
+  transform: rotate(45deg);
+}
+
+.container_body{
+  height: 23rem;
+  width: 15.6rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20%;
+  background-color: #3C3C3C;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.container_body.vermelho {
+  background-color: #C73131;
+}
+
+.line{
+  border: solid 1px #C3D4E9;
+  height: 100%;
+  margin: 0 10px;
+}
+
+.flex1{
+  display: flex;
+  margin-top: 20px;
+}
+
+.left_list, .right_list{
+  padding: 0;
+  font-size: 15px;
+}
+
+.left_list li, .right_list li {
+  margin-bottom: 20px;
+}
+
+.left_list h3, .right_list h3 {
+  color: #fff;
+}
+
+.left_list p, .right_list p{
+  color: #ADADAD;
+}
+
+.flex2{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  gap: 10px;
+}
+
+.bnt_edit{
+  color: #fff;
+  background-color: #202020;
+  border: none;
+  border-radius: 10px;
+  height: 37px;
+  width: 80%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.container_btn_download{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3563E9;
+  border-radius: 10px;
+  height: 49px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn_download{
+  border: none;
+  background-color: #3563E9;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/*Hover*/
+
+.container_close button:hover{
+  background-color: rgb(200, 6, 6);
+}
+
+.bnt_edit:hover{
+  background-color: #181818;
+  transform: translateY(-2px);
+}
+
+.container_btn_download:hover{
+  background-color: #2e56cc;
+  transform: translateY(-2px);
+}
+
+.container_btn_download:hover .btn_download{
+  background-color: #2e56cc;
+}
+
+/*Animation*/
