@@ -34,11 +34,18 @@ body{
   background-color: #3C3C3C;
   border-radius: 10px;
   max-width: 60%;
+  min-width: 30%;
   margin-bottom: 10px;
   color: white;
   padding: 5px;
   font-size: 14px;
   transition: background-color 0.5s ease-in-out;
+}
+
+.container_head h3{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .container_head.vermelho {
@@ -53,7 +60,7 @@ body{
   width: 30px;
   position: absolute;
   left: 94%;
-  top: 12.5%;
+  top: 7%;
   cursor: pointer;
 }
 
